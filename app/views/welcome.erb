@@ -1,0 +1,15 @@
+<div class="container">
+  <ul>
+    <li><a href="/todos/new">Create Todos</a></li>
+  </ul>
+
+  <h2>Todos</h2>
+  <ul>
+  <!-- <% %> Logic Tags -->
+  <!-- <%= %> Render Tags -->
+  
+    <% @todos.each do |todo| %>
+      <li><%= todo.title %> - <%= todo.completed ? 'Complete' : 'Not Complete' %></li>
+    <% end %>
+  </ul>
+</div>
